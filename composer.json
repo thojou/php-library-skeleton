@@ -2,7 +2,7 @@
     "name": "thojou/php-library-skeleton",
     "description": "A skeleton for PHP libraries.",
     "type": "library",
-    "keywords": ["template", "library"],
+    "keywords": ["library"],
     "minimum-stability": "stable",
     "prefer-stable": true,
     "license": "MIT",
@@ -32,5 +32,17 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "check": [
+            "@cs-fixer:check",
+            "@phpstan",
+            "@test"
+        ],
+        "cs-fixer:check": "php-cs-fixer fix --dry-run --diff -v",
+        "cs-fixer:fix": "php-cs-fixer fix --diff -v",
+        "phpstan": "phpstan analyse --memory-limit=1G",
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text --coverage-clover=clover.xml"
     }
 }
