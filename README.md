@@ -14,7 +14,11 @@ It provides a basic structure for PHP libraries, including a CI pipeline, code c
 
 ## Installation
 
-> Add installation instructions here
+You can effortlessly install the **PHP Library Skeleton** using the popular package manager [composer](https://getcomposer.org/).
+
+```bash
+composer require thojou/php-library-skeleton
+```
 
 ## Usage
 
@@ -25,7 +29,7 @@ It provides a basic structure for PHP libraries, including a CI pipeline, code c
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-// Add simple usage code here
+// Add code here
 ```
 
 For more practical examples, please refer to the [examples](./examples) folder.
